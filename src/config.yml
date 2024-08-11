@@ -1,0 +1,14 @@
+# Made by Redafex
+# Report any bugs to Redafex#0616
+Messages:
+  # Putting "Disable" as a message will make the message not appear!
+  # %target% is the player who is getting earraped
+  # %player% is the command sender
+  PlayerNotFound: "&c%target% isn't Online!"
+  NumberNotCorrect: "&cThat is not a real number"
+  PlayerEarraped: "&a%target% is getting earraped"
+  PlayerEarrapedTime: "&a%target% is getting earraped for %seconds% second(s)"
+  PlayerReceivedEarrape: "Disable" # Using this would be useless as you don't want the player getting informed
+  PlayerCancelEarrape: "&aStopped earraping %target%"
+  SelfRecievedEarrape: "&cYou are earraping yourself!"
+  SelfCancelEarrape: "&aStopped earraping you"
