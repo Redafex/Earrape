@@ -22,7 +22,7 @@ public class EarrapeCommand implements CommandExecutor {
 
         Player p = (Player) commandSender;
         UUID pUuid = p.getUniqueId();
-        if (args.length != 0) {
+        if (args.length != 0 && ( p == null || p.hasPermission("earrape.permission"))) {
             Player target = Bukkit.getPlayerExact(args[0]);
             UUID uuid = target.getUniqueId();
 

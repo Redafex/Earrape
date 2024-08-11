@@ -65,18 +65,18 @@ public class Utils {
     public static void sendFromConfig(Player p, Player target, Long time, String configMsg, boolean flip){
         String msg = "Messages." + configMsg;
         if (config.getString(msg) == null || config.getString(msg).equals("Disable")) return;
+        String name = p == null ? "Console" : p.getName();
         String s = color(config.getString(msg))
-                .replace("%player%", p.getName())
+                .replace("%player%", name)
                 .replace("%target%", target.getName())
                 .replace("%seconds%", Long.toString(time));
 
         if (flip) target.sendMessage(s);
-        else p.sendMessage(s);
+        else sendToPlayerIfPos(p, s);
     }
-
-    public static void sendFromConfigToConsole(CommandSender cs, String configMsg){
-        if (config.get(configMsg) == null || config.get(configMsg) == "Disable") return;
-        cs.sendMessage(color(config.getString(configMsg)));
+    public static void sendToPlayerIfPos(Player p, String s){
+        if (p == null) p.sendMessage(s);
+        else Bukkit.getConsoleSender().sendMessage(s);
     }
 
     public static String color(String s){
