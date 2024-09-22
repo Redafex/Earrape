@@ -34,7 +34,6 @@ Admins must have the `earrape.permission` to use the `/earrape` command.
 ### `/earrape [player] [timeout]`
 - **Description**: Blasts a loud sound into the specified player’s game, sends them a customizable message, and controls how long the sound lasts (timeout in seconds).
 - **Usage**: `/earrape <player> <timeout>`
-- If no player is specified, it will affect all players on the server.
 - If no timeout is specified, it will run infinitly until you trigger the command again.
 
 ### Example:
