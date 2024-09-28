@@ -1,4 +1,4 @@
-# Eearrape Plugin
+# Earrape Plugin
 
 ## Overview
 **Eearrape** is a fun and simple Minecraft plugin designed to troll players by blasting the loudest sounds imaginable into their game. It’s a great way for server admins to mess with their players for comedic effect, with highly customizable messages and a timeout feature to control the duration of the sound.
